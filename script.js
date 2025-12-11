@@ -47,3 +47,14 @@ printIntervals("ciao boolean!")
 function printIntervals(msg){
     setInterval(() => console.log(msg), 1000);
 }
+
+//SNACK 5--------------
+creaContatoreAutomatico(1000)
+
+function creaContatoreAutomatico(interval){
+    let counter = 0;
+    setInterval(() => {
+        console.log(counter)
+        counter = counter + 1
+    }, interval)
+} 
