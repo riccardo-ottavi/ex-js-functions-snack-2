@@ -17,3 +17,6 @@ function sum(a, b){
 
 //SNACK 2--------------
 
+const square = (n) => n * n
+
+console.log(square(8))
