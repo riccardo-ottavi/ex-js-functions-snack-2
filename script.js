@@ -31,3 +31,12 @@ console.log(eseguiOperazione(3, 4, moltiplica)); // 12
 function eseguiOperazione(a, b, callback){
     return callback(a,b)
 }
+
+//SNACK 4--------------
+createTimer(2000)
+
+function createTimer(time){
+    return setTimeout(() => {
+        console.log("tempo scaduto!");
+    },time)
+}
