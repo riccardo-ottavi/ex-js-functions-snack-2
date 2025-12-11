@@ -20,3 +20,14 @@ function sum(a, b){
 const square = (n) => n * n
 
 console.log(square(8))
+
+//SNACK 3--------------
+const somma = (a, b) => a + b;
+const moltiplica = (a, b) => a * b;
+
+console.log(eseguiOperazione(3, 4, somma)); // 7
+console.log(eseguiOperazione(3, 4, moltiplica)); // 12
+
+function eseguiOperazione(a, b, callback){
+    return callback(a,b)
+}
