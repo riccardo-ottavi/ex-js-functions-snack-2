@@ -48,7 +48,7 @@ function printIntervals(msg){
     setInterval(() => console.log(msg), 1000);
 }
 
-//SNACK 5--------------
+//SNACK 6--------------
 creaContatoreAutomatico(1000)
 
 function creaContatoreAutomatico(interval){
@@ -58,3 +58,18 @@ function creaContatoreAutomatico(interval){
         counter = counter + 1
     }, interval)
 } 
+
+//SNACK 7--------------
+eseguiEferma("sono ancora nell'intervallo!", 1000, 6000);
+
+function eseguiEferma(msg, start, stop) {
+
+    const intervallo = setInterval(() => {
+        console.log(msg);
+    }, start);
+
+    setTimeout(() => {
+        clearInterval(intervallo);
+    }, stop);
+}
+
