@@ -40,3 +40,10 @@ function createTimer(time){
         console.log("tempo scaduto!");
     },time)
 }
+
+//SNACK 5--------------
+printIntervals("ciao boolean!")
+
+function printIntervals(msg){
+    setInterval(() => console.log(msg), 1000);
+}
