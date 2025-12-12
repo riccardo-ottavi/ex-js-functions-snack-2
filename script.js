@@ -17,7 +17,7 @@ function sum(a, b){
 
 //SNACK 2--------------
 
-const square = (n) => n * n
+const square = n => n * n
 
 console.log(square(8))
 
@@ -54,8 +54,8 @@ creaContatoreAutomatico(1000)
 function creaContatoreAutomatico(interval){
     let counter = 0;
     setInterval(() => {
-        console.log(counter)
-        counter = counter + 1
+        counter = counter + 1;
+        console.log(counter);
     }, interval)
 } 
 
